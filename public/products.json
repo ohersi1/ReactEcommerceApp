@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "name": "iPod Touch (2007)",
+    "price": 99.99,
+    "image": "https://guide-images.cdn.ifixit.com/igi/JlTLYkyKxxvCBhMG.medium",
+    "alt": "Classic iPod Touch 2007 model",
+    "description": "A nostalgic Apple iPod Touch, perfect for music lovers and retro tech fans."
+  },
+  {
+    "id": 2,
+    "name": "PlayStation 2",
+    "price": 149.99,
+    "image": "https://i.redd.it/uvaxikedyfv51.jpg",
+    "alt": "Sony PlayStation 2 console",
+    "description": "Sony’s best-selling console that defined an era of gaming."
+  },
+  {
+    "id": 3,
+    "name": "PlayStation 1",
+    "price": 89.99,
+    "image": "https://cloud.cazaar.co.uk/sony-playstation-1-ps1-console-gifts-for-the-home.jpg",
+    "alt": "Sony PlayStation 1 console",
+    "description": "The console that started Sony’s dominance in gaming history."
+  },
+  {
+    "id": 4,
+    "name": "Nintendo 64",
+    "price": 129.99,
+    "image": "https://m.media-amazon.com/images/I/713O5npuQYL.jpg",
+    "alt": "Nintendo 64 console",
+    "description": "A fan favorite for classics like Mario 64 and GoldenEye."
+  },
+  {
+    "id": 5,
+    "name": "BlackBerry Curve",
+    "price": 59.99,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/8/83/Bb-curve-8520%281%29.jpg",
+    "alt": "BlackBerry Curve smartphone",
+    "description": "Iconic smartphone with a full QWERTY keyboard, pure nostalgia."
+  },
+  {
+    "id": 6,
+    "name": "Game Boy Advance",
+    "price": 79.99,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/0/0b/Nintendo-Game-Boy-Advance-Purple-FL.png",
+    "alt": "Nintendo Game Boy Advance handheld",
+    "description": "Portable gaming at its finest with classics like Pokémon and Mario Kart."
+  },
+  {
+    "id": 7,
+    "name": "Walkman Cassette Player",
+    "price": 39.99,
+    "image": "https://www.mediacollege.com/equipment/sony/walkman/cassette/images/wmfx488.jpg",
+    "alt": "Sony Walkman cassette player",
+    "description": "Relive the cassette tape era with Sony’s legendary Walkman."
+  },
+  {
+    "id": 8,
+    "name": "Sega Dreamcast",
+    "price": 119.99,
+    "image": "https://www.consolemad.co.uk/wp-content/uploads/2015/09/dreamcast-250x250.png",
+    "alt": "Sega Dreamcast console",
+    "description": "Sega’s cult-classic console with innovative graphics and gameplay."
+  },
+  {
+    "id": 9,
+    "name": "Tamagotchi",
+    "price": 24.99,
+    "image": "https://i5.walmartimages.com/seo/Original-Tamagotchi-Flames_5b5b8c85-b7c4-46ee-a403-438f54a9d7d6.ff0527018beaef1d60a41f2f3416e8ad.jpeg",
+    "alt": "Tamagotchi digital pet",
+    "description": "The iconic digital pet toy that kept kids glued to the screen in the 90s."
+  },
+  {
+    "id": 10,
+    "name": "GameCube",
+    "price": 109.99,
+    "image": "https://m.media-amazon.com/images/I/51s+fOXzUbL._UF894,1000_QL80_.jpg",
+    "alt": "Nintendo GameCube console",
+    "description": "Compact and powerful, home to Smash Bros. and Mario Kart Double Dash."
+  },
+  {
+    "id": 11,
+    "name": "Sony Ericsson W810i",
+    "price": 44.99,
+    "image": "https://www.cnet.com/a/img/resize/b91467dd844b38a9e42aeff2f07e12cc06ad0f98/hub/2010/10/21/6a376dc2-cc2e-11e2-9a4a-0291187b029a/sony-ericsson-w810i_1.jpg?auto=webp&width=768",
+    "alt": "Sony Ericsson W810i mobile phone",
+    "description": "The Walkman phone that defined an era."
+  },
+  {
+    "id": 12,
+    "name": "Nokia 6230i",
+    "price": 74.99,
+    "image": "https://images.mobilefun.co.uk/graphics/productgalleries/6254/3.jpg",
+    "alt": "Atari 2600 console",
+    "description": "Classic and very popular Nokia handset that everyone loved."
+  }
+]
