@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.8rem 2rem;
+  padding: 0rem 1.5rem;
   /* background: #111; */
 }
 
@@ -12,9 +12,10 @@
 }
 
 .navbar-logo {
-  height: 9rem;
+  height: 6rem;
   width: auto;
-  display: block;
+  /* display: block; */
+  padding: 0;
 }
 
 .navbar-links {

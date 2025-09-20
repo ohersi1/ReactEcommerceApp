@@ -8,7 +8,7 @@
   padding: 2rem;
   color: #fff;
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-              url("https://images.pexels.com/photos/1637436/pexels-photo-1637436.jpeg") center/cover no-repeat;
+              url("https://cdn.vectorstock.com/i/1000v/99/93/retro-synthwave-neon-grid-background-vector-23819993.jpg") center/cover no-repeat;
 }
 
 .hero-title {
@@ -37,3 +37,6 @@
   background: #d4005c;
   transform: scale(1.05);
 }
+
+
+/* https://images.pexels.com/photos/1637436/pexels-photo-1637436.jpeg */
