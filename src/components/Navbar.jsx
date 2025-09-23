@@ -19,7 +19,7 @@ import React from 'react';
 // export default NavBar
 
 import { Link } from "react-router-dom";
-import logo from "../assets/retro-vault-logo.png"; // <-- save your image into src/assets
+import logo from "../assets/logo.png"; // <-- save your image into src/assets
 import './Navbar.css';
 const NavBar = () => {
   return (
@@ -35,6 +35,11 @@ const NavBar = () => {
         <li><Link to="/cart">Cart</Link></li>
         <li><Link to="/checkout">Checkout</Link></li>
       </ul>
+      <div className="hamburger">
+        <span className='bar'></span>
+        <span className='bar'></span>
+        <span className='bar'></span>
+      </div>
     </nav>
   );
 };

@@ -8,6 +8,7 @@ import CartPage from "./pages/CartPage.jsx";
 import CheckoutPage from "./pages/CheckoutPage.jsx";
 import ProductDetailPage from "./pages/ProductDetailPage.jsx";
 import Footer from "./components/Footer";
+import './index.css';
 
 const AppContent = () => {
   const { pathname } = useLocation();

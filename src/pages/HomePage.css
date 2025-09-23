@@ -1,37 +1,27 @@
+/* mobile-first hero fills viewport */
 .hero {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  min-height: 100vh; /* full screen */
-  padding: 2rem;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  padding: 2rem 1rem;
+  min-height: calc(100vh - var(--nav-height));
+  background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+              url("/assets/retro-bg.jpg") center/cover no-repeat;
   color: #fff;
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-              url("https://cdn.vectorstock.com/i/1000v/99/93/retro-synthwave-neon-grid-background-vector-23819993.jpg") center/cover no-repeat;
 }
 
+/* fluid title */
 .hero-title {
-  font-size: 6rem;
-  font-family: "Press Start 2P", cursive;
-  margin-bottom: 1.5rem;
+  font-family: "Press Start 2P", monospace;
+  font-size: clamp(1.4rem, 3.6vw, 2.6rem); /* scales between mobile & desktop */
+  margin: 0 0 1rem;
 }
 
-.hero-subtitle {
-  font-size: 1.3rem;
-  margin-bottom: 2.5rem;
-  color: #ddd;
-}
+.hero-subtitle { font-size: 1rem; margin-bottom:1.5rem; color:#ddd; }
+.hero-btn { padding: .85rem 1.25rem; border-radius:10px; min-width:160px; }
 
-.hero-btn {
-  background: #ff006e;
-  color: #fff;
-  padding: 1rem 2rem;
-  border-radius: 10px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: background 0.3s ease, transform 0.2s ease;
-}
 
 .hero-btn:hover {
   background: #d4005c;

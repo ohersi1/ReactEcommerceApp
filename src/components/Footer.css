@@ -3,6 +3,8 @@
   padding: 1rem;
   background: #f2f2f2;
   font-size: 0.9rem;
-  color: #555;
+  /* color: #555; */
+  background-color: black;
   margin-top: 2rem;
+  color: white;
 }
