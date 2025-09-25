@@ -19,8 +19,29 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-*{ box-sizing: border-box; }
-html { font-size: 16px; }       /* adjust if needed */
-body { margin:0; font-family: Inter, system-ui, sans-serif; color:var(--text); background:#fff; }
-.app-container { display:flex; flex-direction:column; min-height:100vh; }
-.main-content { flex:1; width:100%; max-width:var(--max-width); margin:0 auto; padding:1rem; }
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+/* adjust if needed */
+body {
+  margin: 0;
+  font-family: Inter, system-ui, sans-serif;
+  color: var(--text);
+  background: #fff;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+  width: 100%;
+}
