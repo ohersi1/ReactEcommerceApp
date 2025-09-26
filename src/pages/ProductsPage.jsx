@@ -8,7 +8,6 @@ const ProductsPage = () => {
       try {
         const response = await fetch("/products.json");
         const json = await response.json();
-        console.log(json);
         setProducts(json);
       } catch (error) {
         console.error(error.message);
@@ -18,7 +17,7 @@ const ProductsPage = () => {
   }, []);
 
   return (
-    <div>
+    <div className="all-products">
       <h1 className="products-heading">All Products</h1>
       <div className="products-grid">
         {products.map((product) => {
