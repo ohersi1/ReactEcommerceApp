@@ -1,9 +1,6 @@
 import React from "react";
 const CartItem = ({ items, stateChange }) => {
-  const total = items.reduce(
-    (sum, item) => sum + item.price * item.quantity,
-    0
-  );
+  let total = items.reduce((sum, item) => sum + item.price * item.quantity, 0);
   const handleCurrency = (num) => {
     let n = num;
     const formatted = new Intl.NumberFormat("en-GB", {
@@ -14,10 +11,21 @@ const CartItem = ({ items, stateChange }) => {
     }).format(n);
     return formatted;
   };
-  const decrease = (e) => {
-    console.log(e.target)
+  const decrease = (i) => {
+    stateChange((prev) => {
+      let newArr = prev.map((item, index) =>
+        index === i ? { ...item, quantity: item.quantity - 1 } : item
+      ).filter((obj) => (obj.quantity !== 0));
+      return newArr;
+    });
   };
-  const increase = () => {};
+  const increase = (i) => {
+    stateChange((prev) =>
+      prev.map((item, index) =>
+        index === i ? { ...item, quantity: item.quantity + 1 } : item
+      )
+    );
+  };
   return (
     <div>
       Cart Items
@@ -28,7 +36,14 @@ const CartItem = ({ items, stateChange }) => {
               <h2>{item.name}</h2>
               <p>Price: {handleCurrency(item.price)}</p>
               <p>
-                Quantity: <button onClick={decrease} className="decrease">-</button> {item.quantity} <button className="increase">+</button>
+                Quantity:{" "}
+                <button onClick={() => decrease(i)} className="decrease">
+                  -
+                </button>{" "}
+                {item.quantity}{" "}
+                <button className="increase" onClick={() => increase(i)}>
+                  +
+                </button>
               </p>
               <p>Subtotal: {handleCurrency(item.quantity * item.price)}</p>
             </div>
