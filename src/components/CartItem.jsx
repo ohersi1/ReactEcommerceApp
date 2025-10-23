@@ -49,7 +49,7 @@ const CartItem = ({ items, stateChange }) => {
             </div>
           );
         })}
-        <div>{handleCurrency(total)}</div>
+        <div>Final Amount: {handleCurrency(total)}</div>
       </div>
     </div>
   );
