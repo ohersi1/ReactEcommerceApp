@@ -40,9 +40,7 @@ export const CartProvider = ({ children }) => {
     setCartItems((prev) =>
       prev
         .map((item) =>
-          item.name === name
-            ? { ...item, quantity: item.quantity - 1 }
-            : item
+          item.name === name ? { ...item, quantity: item.quantity - 1 } : item
         )
         .filter((item) => item.quantity > 0)
     );
@@ -52,9 +50,7 @@ export const CartProvider = ({ children }) => {
   const increaseItem = (name) => {
     setCartItems((prev) =>
       prev.map((item) =>
-        item.name === name
-          ? { ...item, quantity: item.quantity + 1 }
-          : item
+        item.name === name ? { ...item, quantity: item.quantity + 1 } : item
       )
     );
   };
@@ -81,3 +77,5 @@ export const CartProvider = ({ children }) => {
 // So instead of writing useContext(CartContext) everywhere,
 // you can just use: const { cartItems, addItem } = useCart();
 export const useCart = () => useContext(CartContext);
+
+

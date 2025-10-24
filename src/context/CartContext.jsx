@@ -9,7 +9,7 @@ const CartProvider = ({ children }) => {
       let exists = prev.find((item) => item.name === product.name);
       if (exists) {
         return prev.map((item) => {
-          item.name === product.name
+          return item.name === product.name
             ? { ...item, quantity: item.quantity++ }
             : item;
         });
@@ -17,6 +17,9 @@ const CartProvider = ({ children }) => {
         return [...prev, { ...product, quantity: 1 }];
       }
     });
+  };
+  const removeItem = (name) => {
+    setCartItems((prev) => prev.filter((item) => item.name !== name));
   };
 
   return <CartContext.Provider>{children}</CartContext.Provider>;
