@@ -3,9 +3,12 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import logo from "../assets/logo.png";
 import "./Navbar.css";
+import { useCart } from "../context/CartContext";
 const NavBar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const closeMenu = () => setMenuOpen(false);
+  const { cartItems } = useCart();
+  const count = cartItems.reduce((n, item) => n + item.quantity, 0);
 
   return (
     <nav className="navbar">
@@ -16,16 +19,24 @@ const NavBar = () => {
       </div>
       <ul className={`navbar-links ${menuOpen ? "active" : ""}`}>
         <li>
-          <Link to="/" onClick={closeMenu}>Home</Link>
+          <Link to="/" onClick={closeMenu}>
+            Home
+          </Link>
         </li>
         <li>
-          <Link to="/products" onClick={closeMenu}>Products</Link>
+          <Link to="/products" onClick={closeMenu}>
+            Products
+          </Link>
         </li>
         <li>
-          <Link to="/cart" onClick={closeMenu}>Cart</Link>
+          <Link to="/cart" onClick={closeMenu}>
+            Cart {count > 0 ? <span className="cart-count">{count}</span>: ""}
+          </Link>
         </li>
         <li>
-          <Link to="/checkout" onClick={closeMenu}>Checkout</Link>
+          <Link to="/checkout" onClick={closeMenu}>
+            Checkout
+          </Link>
         </li>
       </ul>
       <div

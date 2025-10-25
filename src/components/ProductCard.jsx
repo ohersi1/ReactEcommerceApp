@@ -1,6 +1,8 @@
 import React from "react";
 import './ProductCard.css';
-const ProductCard = ({ name, description, price, image, alt }) => {
+import { useCart } from "../context/CartContext";
+const ProductCard = ({ name, description, price, image, alt, product }) => {
+  const { addItem } = useCart();
   return (
     <div className="product-card">
       <img src={image} alt={alt} />
@@ -8,7 +10,7 @@ const ProductCard = ({ name, description, price, image, alt }) => {
         <h2>{name}</h2>
         <p>{description}</p>
         <div className="product-price">£{price}</div>
-        <button>Add to Cart</button>
+        <button onClick={() => addItem(product)}>Add to Cart</button>
       </div>
     </div>
   );
